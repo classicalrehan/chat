@@ -8,7 +8,7 @@ var http = require('http').Server(app);
 var client = require('socket.io')(http);
 
 
-var port     = process.env.PORT || 8080;
+var port     = process.env.PORT || 3002;
 var mongoose = require('mongoose');
 var path = require('path');
 var passport = require('passport');
@@ -181,6 +181,6 @@ client.on('connection',function(socket){
 
 
 // launch ======================================================================
-http.listen(8080, function(){
+http.listen(3002, function(){
   console.log('Magic start with socket:8080');
 });

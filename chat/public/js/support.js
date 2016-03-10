@@ -132,7 +132,7 @@ $(document).ready(function(){
  
   try{
     //var socket = io.connect('http://192.168.123.204:8080');
-    var socket = io.connect('http://localhost:8080');
+    var socket = io.connect('http://localhost:3002');
   }catch(e){
     //set status to warm user
   }
